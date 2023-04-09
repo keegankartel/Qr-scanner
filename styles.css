@@ -3,21 +3,20 @@
   font-family: 'henken';
   src: url(fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
-
-
 /*Global declearation*/
 *{
- margin: 0;
-  font-family: henken ,'Edu NSW ACT Foundation', cursive;
+  margin: 0;
 }
 
 body{
   background-color: lightblue;
-  min-height: 100vh;
+  font-family: henken ,'Edu NSW ACT Foundation', cursive;
+}
+main{
   display: grid;
   place-items: center;
+  min-height: 100vh;
 }
-
 img{
   position: relative;
   border-radius: 15px;
@@ -52,3 +51,42 @@ h2{
   font-weight: 400;
   padding: 15px 0 20px 0;
 }
+
+/*modifing for mobile responsiveness*/
+@media (max-width: 600px) {
+  *{
+    margin:initial;
+  }
+  img{
+    position: relative;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+  }
+  main{
+    display: block;
+  }
+
+  .main-container{
+    background:transparent;
+    backdrop-filter: blur(20px);
+    border: none;
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    height: 100%;
+  }
+  h1,h2{
+ 
+    padding: 20px;
+  }
+  h2{
+    color: white;
+  }
+}
+
+/*This was a fun project 🚀 
+Coded by keegan kartel/Ahmed Mubarak
+
+*/
